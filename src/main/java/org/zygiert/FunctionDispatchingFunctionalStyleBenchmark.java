@@ -72,8 +72,7 @@ public class FunctionDispatchingFunctionalStyleBenchmark {
 
     static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
-                .include(FunctionDispatchingBenchmark.class.getSimpleName())
-                .mode(Mode.AverageTime)
+                .include(FunctionDispatchingFunctionalStyleBenchmark.class.getSimpleName())
                 .build();
 
         new Runner(opt).run();

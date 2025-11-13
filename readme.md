@@ -29,3 +29,7 @@ I was running it on macOS with aarch64.
 
 ## FunctionDispatchingFunctionalStyle
 1. Dispatch with `initVehicleArray(3)`
+
+## Running benchmarks
+`mvn clean package`
+`java -jar target/benchmarks.jar`
