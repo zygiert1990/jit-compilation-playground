@@ -1,359 +1,359 @@
-# {method} {0x0000000150400970} 'compute' '([LFunctionDispatchingFunctionalStyle$Vehicle;)I' in 'FunctionDispatchingFunctionalStyle'
+# {method} {0x0000000131400730} 'compute' '([LFunctionDispatchingFunctionalStyle$Vehicle;)I' in 'FunctionDispatchingFunctionalStyle'
 [Entry Point]
-0x00000001159141c0: brk  #0x0
-0x00000001159141c4: nop
-0x00000001159141c8: nop
-0x00000001159141cc: nop
-0x00000001159141d0: nop
-0x00000001159141d4: sub x9, sp  #0x14, lsl #12
-0x00000001159141d8: str xzr, [x9]
-0x00000001159141dc: sub sp, sp  #0x40
-0x00000001159141e0: stp x29, x30, [sp,  #48]
-0x00000001159141e4: ldr w8, 0x0000000115914594
-0x00000001159141e8: ldr w9, [x28,  #32]
-0x00000001159141ec: cmp x8, x9
-0x00000001159141f0: b
-0x00000001159141f4: ldr x21, [x1,  #24]
-0x00000001159141f8: ldr w19, [x1,  #32]
-0x00000001159141fc: ldr w22, [x1,  #16]
-0x0000000115914200: ldr w20, [x1,  #8]
-0x0000000115914204: mov x0, x1
-0x0000000115914208: adr x9, 0x0000000115914220
-0x000000011591420c: str x9, [x28,  #1040]
-0x0000000115914210: mov x8  #0xa384                	// #41860
+0x00000001133bed40: brk  #0x0
+0x00000001133bed44: nop
+0x00000001133bed48: nop
+0x00000001133bed4c: nop
+0x00000001133bed50: nop
+0x00000001133bed54: sub x9, sp  #0x14, lsl #12
+0x00000001133bed58: str xzr, [x9]
+0x00000001133bed5c: sub sp, sp  #0x40
+0x00000001133bed60: stp x29, x30, [sp,  #48]
+0x00000001133bed64: ldr w8, 0x00000001133bf114
+0x00000001133bed68: ldr w9, [x28,  #32]
+0x00000001133bed6c: cmp x8, x9
+0x00000001133bed70: b
+0x00000001133bed74: ldr x21, [x1,  #24]
+0x00000001133bed78: ldr w19, [x1,  #32]
+0x00000001133bed7c: ldr w22, [x1,  #16]
+0x00000001133bed80: ldr w20, [x1,  #8]
+0x00000001133bed84: mov x0, x1
+0x00000001133bed88: adr x9, 0x00000001133beda0
+0x00000001133bed8c: str x9, [x28,  #1040]
+0x00000001133bed90: mov x8  #0x6384                	// #25476
                             ;   {runtime_call SharedRuntime::OSR_migration_end(long*)}
-0x0000000115914214: movk x8  #0x49f, lsl #16
-0x0000000115914218: movk x8  #0x1, lsl #32
-0x000000011591421c: blr x8
-0x0000000115914220: nop  ;   {post_call_nop}
-0x0000000115914224: movk xzr  #0x0
-0x0000000115914228: movk xzr  #0x0
-0x000000011591422c: ldr w11, [x21,  #8]              ; implicit exception: dispatches to 0x0000000115914524
-0x0000000115914230: eor x10, x11  #0x700000000000
-0x0000000115914234: ldr x10, [x10,  #56]
-0x0000000115914238: mov x11  #0x5a70                	// #23152
+0x00000001133bed94: movk x8  #0x24a, lsl #16
+0x00000001133bed98: movk x8  #0x1, lsl #32
+0x00000001133bed9c: blr x8
+0x00000001133beda0: nop  ;   {post_call_nop}
+0x00000001133beda4: movk xzr  #0x0
+0x00000001133beda8: movk xzr  #0x0
+0x00000001133bedac: ldr w11, [x21,  #8]              ; implicit exception: dispatches to 0x00000001133bf0a4
+0x00000001133bedb0: eor x10, x11  #0x38000000000
+0x00000001133bedb4: ldr x10, [x10,  #56]
+0x00000001133bedb8: mov x11  #0x5a70                	// #23152
                              ;   {metadata('java/lang/Object'[])}
-0x000000011591423c: movk x11  #0x17, lsl #16
-0x0000000115914240: movk x11  #0x7000, lsl #32
-0x0000000115914244: cmp x10, x11
-0x0000000115914248: b
-0x000000011591424c: add w10, w20  #0x1
-0x0000000115914250: cmp w10  #0x0
-0x0000000115914254: sxtw x11, w10  ;*iload {reexecute=0 rethrow=0 return_oop=0}
-                                   ; - FunctionDispatchingFunctionalStyle::compute@10 (line 12)
-0x0000000115914258: csel x10, xzr, x11, lt
-0x000000011591425c: ldr w15, [x21,  #12]             ;*aaload {reexecute=0 rethrow=0 return_oop=0}
-                                    ; - FunctionDispatchingFunctionalStyle::compute@19 (line 12)
-0x0000000115914260: cmp w20, w22
-0x0000000115914264: b  ; - FunctionDispatchingFunctionalStyle::compute@13 (line 12)
-0x0000000115914268: cmp w10, w22
-0x000000011591426c: csel w10, w10, w22, lt
-0x0000000115914270: mov x12  #0x1040000             	// #17039360
+0x00000001133bedbc: movk x11  #0x17, lsl #16
+0x00000001133bedc0: movk x11  #0x380, lsl #32
+0x00000001133bedc4: cmp x10, x11
+0x00000001133bedc8: b
+0x00000001133bedcc: add w10, w20  #0x1
+0x00000001133bedd0: cmp w10  #0x0
+0x00000001133bedd4: sxtw x11, w10  ;*iload {reexecute=0 rethrow=0 return_oop=0}
+                                   ; - FunctionDispatchingFunctionalStyle::compute@10 (line 10)
+0x00000001133bedd8: csel x10, xzr, x11, lt
+0x00000001133beddc: ldr w15, [x21,  #12]             ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                    ; - FunctionDispatchingFunctionalStyle::compute@19 (line 10)
+0x00000001133bede0: cmp w20, w22
+0x00000001133bede4: b  ; - FunctionDispatchingFunctionalStyle::compute@13 (line 10)
+0x00000001133bede8: cmp w10, w22
+0x00000001133bedec: csel w10, w10, w22, lt
+0x00000001133bedf0: mov x12  #0x1040000             	// #17039360
                              ;   {metadata('FunctionDispatchingFunctionalStyle$Bike')}
-0x0000000115914274: movk x12  #0x210
-0x0000000115914278: add x11, x21, w20, sxtw  #2
-0x000000011591427c: cmp w20, w15
-0x0000000115914280: b
-0x0000000115914284: ldr w5, [x11,  #16]
-0x0000000115914288: lsl x11, x5  #3                 ;*aaload {reexecute=0 rethrow=0 return_oop=0}
-                                 ; - FunctionDispatchingFunctionalStyle::compute@19 (line 12)
-0x000000011591428c: ldr w13, [x11,  #8]              ; implicit exception: dispatches to 0x000000011591454c
+0x00000001133bedf4: movk x12  #0x410
+0x00000001133bedf8: add x11, x21, w20, sxtw  #2
+0x00000001133bedfc: cmp w20, w15
+0x00000001133bee00: b
+0x00000001133bee04: ldr w5, [x11,  #16]
+0x00000001133bee08: lsl x11, x5  #3                 ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                 ; - FunctionDispatchingFunctionalStyle::compute@19 (line 10)
+0x00000001133bee0c: ldr w13, [x11,  #8]              ; implicit exception: dispatches to 0x00000001133bf0cc
                                     ;*instanceof {reexecute=0 rethrow=0 return_oop=0}
-                                    ; - FunctionDispatchingFunctionalStyle$$TypeSwitch/0x0000700001041800::typeSwitch@59
+                                    ; - FunctionDispatchingFunctionalStyle$$TypeSwitch/0x0000038001041000::typeSwitch@67
                                     ; - java.lang.invoke.DirectMethodHandle$Holder::invokeStatic@11
                                     ; - java.lang.invoke.Invokers$Holder::linkToTargetMethod@6
-                                    ; - FunctionDispatchingFunctionalStyle::getPrice@11 (line 19)
-                                    ; - FunctionDispatchingFunctionalStyle::compute@25 (line 13)
-0x0000000115914290: cmp w13, w12
-0x0000000115914294: b
-0x0000000115914298: mov w13  #0xa                   	// #10
+                                    ; - FunctionDispatchingFunctionalStyle::getPrice@11 (line 17)
+                                    ; - FunctionDispatchingFunctionalStyle::compute@25 (line 11)
+0x00000001133bee10: cmp w13, w12
+0x00000001133bee14: b
+0x00000001133bee18: mov w13  #0xa                   	// #10
                              ;*goto {reexecute=0 rethrow=0 return_oop=0}
-                             ; - FunctionDispatchingFunctionalStyle::getPrice@61 (line 21)
-                             ; - FunctionDispatchingFunctionalStyle::compute@25 (line 13)
-0x000000011591429c: add w20, w20  #0x1              ;*iinc {reexecute=0 rethrow=0 return_oop=0}
-                                  ; - FunctionDispatchingFunctionalStyle::compute@30 (line 12)
-0x00000001159142a0: add w19, w19, w13  ;*iadd {reexecute=0 rethrow=0 return_oop=0}
-                                       ; - FunctionDispatchingFunctionalStyle::compute@28 (line 13)
-0x00000001159142a4: cmp w20, w10
-0x00000001159142a8: b  ; - FunctionDispatchingFunctionalStyle::compute@13 (line 12)
-0x00000001159142ac: sxtw x10, w15
-0x00000001159142b0: sxtw x11, w22
-0x00000001159142b4: cmp x11, x10
-0x00000001159142b8: csel x10, x11, x10, lt
-0x00000001159142bc: sub x10, x10  #0x1
-0x00000001159142c0: mov x8  #0xffffffff80000000    	// #-2147483648
-0x00000001159142c4: cmp x10, x8
-0x00000001159142c8: mov x11  #0xffffffff80000000    	// #-2147483648
-0x00000001159142cc: csel x10, x11, x10, lt
-0x00000001159142d0: mov w12, w10
-0x00000001159142d4: cmp w20, w12
-0x00000001159142d8: b
-0x00000001159142dc: mov w16  #0x7d0                 	// #2000
-0x00000001159142e0: mov x14  #0x1040000             	// #17039360
-                             ;   {metadata('FunctionDispatchingFunctionalStyle$Truck')}
-0x00000001159142e4: movk x14  #0x630
-0x00000001159142e8: mov x0  #0x1040000             	// #17039360
-                            ;   {metadata('FunctionDispatchingFunctionalStyle$Car')}
-0x00000001159142ec: movk x0  #0x420
-0x00000001159142f0: mov x17  #0x1040000             	// #17039360
+                             ; - FunctionDispatchingFunctionalStyle::getPrice@69 (line 19)
+                             ; - FunctionDispatchingFunctionalStyle::compute@25 (line 11)
+0x00000001133bee1c: add w20, w20  #0x1              ;*iinc {reexecute=0 rethrow=0 return_oop=0}
+                                  ; - FunctionDispatchingFunctionalStyle::compute@30 (line 10)
+0x00000001133bee20: add w19, w19, w13  ;*iadd {reexecute=0 rethrow=0 return_oop=0}
+                                       ; - FunctionDispatchingFunctionalStyle::compute@28 (line 11)
+0x00000001133bee24: cmp w20, w10
+0x00000001133bee28: b  ; - FunctionDispatchingFunctionalStyle::compute@13 (line 10)
+0x00000001133bee2c: sxtw x10, w15
+0x00000001133bee30: sxtw x11, w22
+0x00000001133bee34: cmp x11, x10
+0x00000001133bee38: csel x10, x11, x10, lt
+0x00000001133bee3c: sub x10, x10  #0x1
+0x00000001133bee40: mov x8  #0xffffffff80000000    	// #-2147483648
+0x00000001133bee44: cmp x10, x8
+0x00000001133bee48: mov x11  #0xffffffff80000000    	// #-2147483648
+0x00000001133bee4c: csel x10, x11, x10, lt
+0x00000001133bee50: mov w12, w10
+0x00000001133bee54: cmp w20, w12
+0x00000001133bee58: b
+0x00000001133bee5c: mov w16  #0x7d0                 	// #2000
+0x00000001133bee60: mov x14  #0x1040000             	// #17039360
                              ;   {metadata('FunctionDispatchingFunctionalStyle$Bike')}
-0x00000001159142f4: movk x17  #0x210
-0x00000001159142f8: mov x2  #0x1040000             	// #17039360
-                            ;   {metadata('FunctionDispatchingFunctionalStyle$Truck')}
-0x00000001159142fc: movk x2  #0x630
-0x0000000115914300: mov x1  #0x1040000             	// #17039360
+0x00000001133bee64: movk x14  #0x410
+0x00000001133bee68: mov x0  #0x1040000             	// #17039360
                             ;   {metadata('FunctionDispatchingFunctionalStyle$Car')}
-0x0000000115914304: movk x1  #0x420
-0x0000000115914308: mov x4  #0x1040000             	// #17039360
+0x00000001133bee6c: movk x0  #0x620
+0x00000001133bee70: mov x17  #0x1040000             	// #17039360
+                             ;   {metadata('FunctionDispatchingFunctionalStyle$Truck')}
+0x00000001133bee74: movk x17  #0x830
+0x00000001133bee78: mov x2  #0x1040000             	// #17039360
                             ;   {metadata('FunctionDispatchingFunctionalStyle$Bike')}
-0x000000011591430c: movk x4  #0x210                  ;*aaload {reexecute=0 rethrow=0 return_oop=0}
-                             ; - FunctionDispatchingFunctionalStyle::compute@19 (line 12)
-0x0000000115914310: cmp w12, w20
-0x0000000115914314: sub w11, w12, w20
-0x0000000115914318: csel w11, wzr, w11, lt
-0x000000011591431c: cmp w11  #0x7d0
-0x0000000115914320: csel w11, w16, w11, hi
-0x0000000115914324: add w6, w11, w20
-0x0000000115914328: b 0x0000000115914344
-0x000000011591432c: nop
-0x0000000115914330: mov w11  #0xa                   	// #10
+0x00000001133bee7c: movk x2  #0x410
+0x00000001133bee80: mov x1  #0x1040000             	// #17039360
+                            ;   {metadata('FunctionDispatchingFunctionalStyle$Car')}
+0x00000001133bee84: movk x1  #0x620
+0x00000001133bee88: mov x4  #0x1040000             	// #17039360
+                            ;   {metadata('FunctionDispatchingFunctionalStyle$Truck')}
+0x00000001133bee8c: movk x4  #0x830                  ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                             ; - FunctionDispatchingFunctionalStyle::compute@19 (line 10)
+0x00000001133bee90: cmp w12, w20
+0x00000001133bee94: sub w11, w12, w20
+0x00000001133bee98: csel w11, wzr, w11, lt
+0x00000001133bee9c: cmp w11  #0x7d0
+0x00000001133beea0: csel w11, w16, w11, hi
+0x00000001133beea4: add w6, w11, w20
+0x00000001133beea8: b 0x00000001133beec4
+0x00000001133beeac: nop
+0x00000001133beeb0: mov w11  #0xa                   	// #10
                              ;*goto {reexecute=0 rethrow=0 return_oop=0}
-                             ; - FunctionDispatchingFunctionalStyle::getPrice@61 (line 21)
-                             ; - FunctionDispatchingFunctionalStyle::compute@25 (line 13)
-0x0000000115914334: add w20, w20  #0x2              ;*iinc {reexecute=0 rethrow=0 return_oop=0}
-                                  ; - FunctionDispatchingFunctionalStyle::compute@30 (line 12)
-0x0000000115914338: add w19, w11, w19  ;*iadd {reexecute=0 rethrow=0 return_oop=0}
-                                       ; - FunctionDispatchingFunctionalStyle::compute@28 (line 13)
-0x000000011591433c: cmp w20, w6
-0x0000000115914340: b
-0x0000000115914344: add x10, x21, w20, sxtw  #2
-0x0000000115914348: ldp w11, w5, [x10,  #16]
-0x000000011591434c: lsl x10, x11  #3                ;*aaload {reexecute=0 rethrow=0 return_oop=0}
-                                  ; - FunctionDispatchingFunctionalStyle::compute@19 (line 12)
-0x0000000115914350: ldr w13, [x10,  #8]              ; implicit exception: dispatches to 0x0000000115914554
+                             ; - FunctionDispatchingFunctionalStyle::getPrice@69 (line 19)
+                             ; - FunctionDispatchingFunctionalStyle::compute@25 (line 11)
+0x00000001133beeb4: add w20, w20  #0x2              ;*iinc {reexecute=0 rethrow=0 return_oop=0}
+                                  ; - FunctionDispatchingFunctionalStyle::compute@30 (line 10)
+0x00000001133beeb8: add w19, w11, w19  ;*iadd {reexecute=0 rethrow=0 return_oop=0}
+                                       ; - FunctionDispatchingFunctionalStyle::compute@28 (line 11)
+0x00000001133beebc: cmp w20, w6
+0x00000001133beec0: b
+0x00000001133beec4: add x10, x21, w20, sxtw  #2
+0x00000001133beec8: ldp w11, w5, [x10,  #16]
+0x00000001133beecc: lsl x10, x11  #3                ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                  ; - FunctionDispatchingFunctionalStyle::compute@19 (line 10)
+0x00000001133beed0: ldr w13, [x10,  #8]              ; implicit exception: dispatches to 0x00000001133bf0d4
                                     ;*instanceof {reexecute=0 rethrow=0 return_oop=0}
-                                    ; - FunctionDispatchingFunctionalStyle$$TypeSwitch/0x0000700001041800::typeSwitch@59
+                                    ; - FunctionDispatchingFunctionalStyle$$TypeSwitch/0x0000038001041000::typeSwitch@67
                                     ; - java.lang.invoke.DirectMethodHandle$Holder::invokeStatic@11
                                     ; - java.lang.invoke.Invokers$Holder::linkToTargetMethod@6
-                                    ; - FunctionDispatchingFunctionalStyle::getPrice@11 (line 19)
-                                    ; - FunctionDispatchingFunctionalStyle::compute@25 (line 13)
-0x0000000115914354: cmp w13, w17
-0x0000000115914358: lsl x11, x5  #3                 ;*aaload {reexecute=0 rethrow=0 return_oop=0}
-                                 ; - FunctionDispatchingFunctionalStyle::compute@19 (line 12)
-0x000000011591435c: b
-0x0000000115914360: mov w10  #0xa                   	// #10
+                                    ; - FunctionDispatchingFunctionalStyle::getPrice@11 (line 17)
+                                    ; - FunctionDispatchingFunctionalStyle::compute@25 (line 11)
+0x00000001133beed4: cmp w13, w14
+0x00000001133beed8: lsl x11, x5  #3                 ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                 ; - FunctionDispatchingFunctionalStyle::compute@19 (line 10)
+0x00000001133beedc: b
+0x00000001133beee0: mov w10  #0xa                   	// #10
                              ;*goto {reexecute=0 rethrow=0 return_oop=0}
-                             ; - FunctionDispatchingFunctionalStyle::getPrice@61 (line 21)
-                             ; - FunctionDispatchingFunctionalStyle::compute@25 (line 13)
-0x0000000115914364: add w3, w20  #0x1               ;*iinc {reexecute=0 rethrow=0 return_oop=0}
-                                 ; - FunctionDispatchingFunctionalStyle::compute@30 (line 12)
-0x0000000115914368: add w19, w10, w19  ;*iadd {reexecute=0 rethrow=0 return_oop=0}
-                                       ; - FunctionDispatchingFunctionalStyle::compute@28 (line 13)
-0x000000011591436c: ldr w13, [x11,  #8]              ; implicit exception: dispatches to 0x000000011591455c
-0x0000000115914370: cmp w13, w4
-0x0000000115914374: b
-0x0000000115914378: cmp w13, w1
-0x000000011591437c: b
-0x0000000115914380: mov w11  #0x14                  	// #20
-0x0000000115914384: b 0x0000000115914334
-0x0000000115914388: cmp w13, w0
-0x000000011591438c: b
-0x0000000115914390: mov w10  #0x14                  	// #20
-0x0000000115914394: b 0x0000000115914364
-0x0000000115914398: cmp w13, w14
-0x000000011591439c: b
-0x00000001159143a0: orr w10, wzr  #0x1e
-0x00000001159143a4: b 0x0000000115914364
-0x00000001159143a8: cmp w13, w2
-0x00000001159143ac: b  ; - FunctionDispatchingFunctionalStyle$$TypeSwitch/0x0000700001041800::typeSwitch@59
+                             ; - FunctionDispatchingFunctionalStyle::getPrice@69 (line 19)
+                             ; - FunctionDispatchingFunctionalStyle::compute@25 (line 11)
+0x00000001133beee4: add w3, w20  #0x1               ;*iinc {reexecute=0 rethrow=0 return_oop=0}
+                                 ; - FunctionDispatchingFunctionalStyle::compute@30 (line 10)
+0x00000001133beee8: add w19, w10, w19  ;*iadd {reexecute=0 rethrow=0 return_oop=0}
+                                       ; - FunctionDispatchingFunctionalStyle::compute@28 (line 11)
+0x00000001133beeec: ldr w13, [x11,  #8]              ; implicit exception: dispatches to 0x00000001133bf0dc
+0x00000001133beef0: cmp w13, w2
+0x00000001133beef4: b
+0x00000001133beef8: cmp w13, w1
+0x00000001133beefc: b
+0x00000001133bef00: mov w11  #0x14                  	// #20
+0x00000001133bef04: b 0x00000001133beeb4
+0x00000001133bef08: cmp w13, w0
+0x00000001133bef0c: b
+0x00000001133bef10: mov w10  #0x14                  	// #20
+0x00000001133bef14: b 0x00000001133beee4
+0x00000001133bef18: cmp w13, w17
+0x00000001133bef1c: b
+0x00000001133bef20: orr w10, wzr  #0x1e
+0x00000001133bef24: b 0x00000001133beee4
+0x00000001133bef28: cmp w13, w4
+0x00000001133bef2c: b  ; - FunctionDispatchingFunctionalStyle$$TypeSwitch/0x0000038001041000::typeSwitch@67
                        ; - java.lang.invoke.DirectMethodHandle$Holder::invokeStatic@11
                        ; - java.lang.invoke.Invokers$Holder::linkToTargetMethod@6
-                       ; - FunctionDispatchingFunctionalStyle::getPrice@11 (line 19)
-                       ; - FunctionDispatchingFunctionalStyle::compute@25 (line 13)
-0x00000001159143b0: orr w11, wzr  #0x1e
-0x00000001159143b4: b 0x0000000115914334
-0x00000001159143b8: ldr x10, [x28,  #48]             ; ImmutableOopMap {rdispatch=Oop }
+                       ; - FunctionDispatchingFunctionalStyle::getPrice@11 (line 17)
+                       ; - FunctionDispatchingFunctionalStyle::compute@25 (line 11)
+0x00000001133bef30: orr w11, wzr  #0x1e
+0x00000001133bef34: b 0x00000001133beeb4
+0x00000001133bef38: ldr x10, [x28,  #48]             ; ImmutableOopMap {rdispatch=Oop }
                                     ;*goto {reexecute=1 rethrow=0 return_oop=0}
-                                    ; - (reexecute) FunctionDispatchingFunctionalStyle::compute@33 (line 12)
-0x00000001159143bc: ldr wzr, [x10]  ;*goto {reexecute=0 rethrow=0 return_oop=0}
-                                    ; - FunctionDispatchingFunctionalStyle::compute@33 (line 12)
+                                    ; - (reexecute) FunctionDispatchingFunctionalStyle::compute@33 (line 10)
+0x00000001133bef3c: ldr wzr, [x10]  ;*goto {reexecute=0 rethrow=0 return_oop=0}
+                                    ; - FunctionDispatchingFunctionalStyle::compute@33 (line 10)
                                     ;   {poll} *** SAFEPOINT POLL ***
-0x00000001159143c0: cmp w20, w12
-0x00000001159143c4: b
-0x00000001159143c8: cmp w20, w22
-0x00000001159143cc: b
-0x00000001159143d0: mov x10  #0x1040000             	// #17039360
+0x00000001133bef40: cmp w20, w12
+0x00000001133bef44: b
+0x00000001133bef48: cmp w20, w22
+0x00000001133bef4c: b
+0x00000001133bef50: mov x10  #0x1040000             	// #17039360
+                             ;   {metadata('FunctionDispatchingFunctionalStyle$Truck')}
+0x00000001133bef54: movk x10  #0x830
+0x00000001133bef58: mov x13  #0x1040000             	// #17039360
                              ;   {metadata('FunctionDispatchingFunctionalStyle$Bike')}
-0x00000001159143d4: movk x10  #0x210
-0x00000001159143d8: mov x13  #0x1040000             	// #17039360
-                             ;   {metadata('FunctionDispatchingFunctionalStyle$Truck')}
-0x00000001159143dc: movk x13  #0x630
-0x00000001159143e0: mov x12  #0x1040000             	// #17039360
+0x00000001133bef5c: movk x13  #0x410
+0x00000001133bef60: mov x12  #0x1040000             	// #17039360
                              ;   {metadata('FunctionDispatchingFunctionalStyle$Car')}
-0x00000001159143e4: movk x12  #0x420
-0x00000001159143e8: b 0x0000000115914454
-0x00000001159143ec: mov x14  #0x1040000             	// #17039360
+0x00000001133bef64: movk x12  #0x620
+0x00000001133bef68: b 0x00000001133befd4
+0x00000001133bef6c: mov x14  #0x1040000             	// #17039360
                              ;   {metadata('FunctionDispatchingFunctionalStyle$Car')}
-0x00000001159143f0: movk x14  #0x420
-0x00000001159143f4: cmp w13, w14
-0x00000001159143f8: b
-0x00000001159143fc: mov w13  #0x14                  	// #20
-0x0000000115914400: b 0x000000011591429c
-0x0000000115914404: mov x14  #0x1040000             	// #17039360
+0x00000001133bef70: movk x14  #0x620
+0x00000001133bef74: cmp w13, w14
+0x00000001133bef78: b
+0x00000001133bef7c: mov w13  #0x14                  	// #20
+0x00000001133bef80: b 0x00000001133bee1c
+0x00000001133bef84: mov x14  #0x1040000             	// #17039360
                              ;   {metadata('FunctionDispatchingFunctionalStyle$Truck')}
-0x0000000115914408: movk x14  #0x630
-0x000000011591440c: cmp w13, w14
-0x0000000115914410: b  ; - FunctionDispatchingFunctionalStyle$$TypeSwitch/0x0000700001041800::typeSwitch@59
+0x00000001133bef88: movk x14  #0x830
+0x00000001133bef8c: cmp w13, w14
+0x00000001133bef90: b  ; - FunctionDispatchingFunctionalStyle$$TypeSwitch/0x0000038001041000::typeSwitch@67
                        ; - java.lang.invoke.DirectMethodHandle$Holder::invokeStatic@11
                        ; - java.lang.invoke.Invokers$Holder::linkToTargetMethod@6
-                       ; - FunctionDispatchingFunctionalStyle::getPrice@11 (line 19)
-                       ; - FunctionDispatchingFunctionalStyle::compute@25 (line 13)
-0x0000000115914414: orr w13, wzr  #0x1e
-0x0000000115914418: b 0x000000011591429c
-0x000000011591441c: str w22, [sp,  #24]
-0x0000000115914420: mov w1  #0xffffffe4            	// #-28
-0x0000000115914424: mov w29, w19
-0x0000000115914428: str w20, [sp,  #12]
-0x000000011591442c: str x21, [sp,  #16]
-0x0000000115914430: bl 0x00000001152def00  ; ImmutableOopMap {[16]=Oop }
+                       ; - FunctionDispatchingFunctionalStyle::getPrice@11 (line 17)
+                       ; - FunctionDispatchingFunctionalStyle::compute@25 (line 11)
+0x00000001133bef94: orr w13, wzr  #0x1e
+0x00000001133bef98: b 0x00000001133bee1c
+0x00000001133bef9c: str w22, [sp,  #24]
+0x00000001133befa0: mov w1  #0xffffffe4            	// #-28
+0x00000001133befa4: mov w29, w19
+0x00000001133befa8: str w20, [sp,  #12]
+0x00000001133befac: str x21, [sp,  #16]
+0x00000001133befb0: bl 0x0000000112d8af00  ; ImmutableOopMap {[16]=Oop }
                                            ;*aaload {reexecute=0 rethrow=0 return_oop=0}
-                                           ; - FunctionDispatchingFunctionalStyle::compute@19 (line 12)
+                                           ; - FunctionDispatchingFunctionalStyle::compute@19 (line 10)
                                            ;   {runtime_call UncommonTrapBlob}
-0x0000000115914434: nop  ;   {post_call_nop}
-0x0000000115914438: movk xzr  #0x36c
-0x000000011591443c: movk xzr  #0x100                 ;*aaload {reexecute=0 rethrow=0 return_oop=0}
-                              ; - FunctionDispatchingFunctionalStyle::compute@19 (line 12)
-0x0000000115914440: mov w11  #0xa                   	// #10
+0x00000001133befb4: nop  ;   {post_call_nop}
+0x00000001133befb8: movk xzr  #0x36c
+0x00000001133befbc: movk xzr  #0x100                 ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                              ; - FunctionDispatchingFunctionalStyle::compute@19 (line 10)
+0x00000001133befc0: mov w11  #0xa                   	// #10
                              ;*goto {reexecute=0 rethrow=0 return_oop=0}
-                             ; - FunctionDispatchingFunctionalStyle::getPrice@61 (line 21)
-                             ; - FunctionDispatchingFunctionalStyle::compute@25 (line 13)
-0x0000000115914444: add w20, w20  #0x1              ;*iinc {reexecute=0 rethrow=0 return_oop=0}
-                                  ; - FunctionDispatchingFunctionalStyle::compute@30 (line 12)
-0x0000000115914448: add w19, w19, w11  ;*iadd {reexecute=0 rethrow=0 return_oop=0}
-                                       ; - FunctionDispatchingFunctionalStyle::compute@28 (line 13)
-0x000000011591444c: cmp w20, w22
-0x0000000115914450: b  ; - FunctionDispatchingFunctionalStyle::compute@13 (line 12)
-0x0000000115914454: add x11, x21, w20, sxtw  #2
-0x0000000115914458: cmp w20, w15
-0x000000011591445c: b
-0x0000000115914460: ldr w5, [x11,  #16]
-0x0000000115914464: lsl x11, x5  #3                 ;*aaload {reexecute=0 rethrow=0 return_oop=0}
-                                 ; - FunctionDispatchingFunctionalStyle::compute@19 (line 12)
-0x0000000115914468: ldr w14, [x11,  #8]              ; implicit exception: dispatches to 0x0000000115914540
-0x000000011591446c: cmp w14, w10
-0x0000000115914470: b
-0x0000000115914474: cmp w14, w12
-0x0000000115914478: b
-0x000000011591447c: mov w11  #0x14                  	// #20
-0x0000000115914480: b 0x0000000115914444
-0x0000000115914484: cmp w14, w13
-0x0000000115914488: b  ; - FunctionDispatchingFunctionalStyle$$TypeSwitch/0x0000700001041800::typeSwitch@59
+                             ; - FunctionDispatchingFunctionalStyle::getPrice@69 (line 19)
+                             ; - FunctionDispatchingFunctionalStyle::compute@25 (line 11)
+0x00000001133befc4: add w20, w20  #0x1              ;*iinc {reexecute=0 rethrow=0 return_oop=0}
+                                  ; - FunctionDispatchingFunctionalStyle::compute@30 (line 10)
+0x00000001133befc8: add w19, w19, w11  ;*iadd {reexecute=0 rethrow=0 return_oop=0}
+                                       ; - FunctionDispatchingFunctionalStyle::compute@28 (line 11)
+0x00000001133befcc: cmp w20, w22
+0x00000001133befd0: b  ; - FunctionDispatchingFunctionalStyle::compute@13 (line 10)
+0x00000001133befd4: add x11, x21, w20, sxtw  #2
+0x00000001133befd8: cmp w20, w15
+0x00000001133befdc: b
+0x00000001133befe0: ldr w5, [x11,  #16]
+0x00000001133befe4: lsl x11, x5  #3                 ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                                 ; - FunctionDispatchingFunctionalStyle::compute@19 (line 10)
+0x00000001133befe8: ldr w14, [x11,  #8]              ; implicit exception: dispatches to 0x00000001133bf0c0
+0x00000001133befec: cmp w14, w13
+0x00000001133beff0: b
+0x00000001133beff4: cmp w14, w12
+0x00000001133beff8: b
+0x00000001133beffc: mov w11  #0x14                  	// #20
+0x00000001133bf000: b 0x00000001133befc4
+0x00000001133bf004: cmp w14, w10
+0x00000001133bf008: b  ; - FunctionDispatchingFunctionalStyle$$TypeSwitch/0x0000038001041000::typeSwitch@67
                        ; - java.lang.invoke.DirectMethodHandle$Holder::invokeStatic@11
                        ; - java.lang.invoke.Invokers$Holder::linkToTargetMethod@6
-                       ; - FunctionDispatchingFunctionalStyle::getPrice@11 (line 19)
-                       ; - FunctionDispatchingFunctionalStyle::compute@25 (line 13)
-0x000000011591448c: orr w11, wzr  #0x1e
-0x0000000115914490: b 0x0000000115914444
-0x0000000115914494: mov w1  #0xffffff85            	// #-123
-0x0000000115914498: mov w29, w19
-0x000000011591449c: str x21, [sp]
-0x00000001159144a0: stp w20, w22, [sp,  #8]
-0x00000001159144a4: bl 0x00000001152def00  ; ImmutableOopMap {[0]=Oop }
+                       ; - FunctionDispatchingFunctionalStyle::getPrice@11 (line 17)
+                       ; - FunctionDispatchingFunctionalStyle::compute@25 (line 11)
+0x00000001133bf00c: orr w11, wzr  #0x1e
+0x00000001133bf010: b 0x00000001133befc4
+0x00000001133bf014: mov w1  #0xffffff85            	// #-123
+0x00000001133bf018: mov w29, w19
+0x00000001133bf01c: str x21, [sp]
+0x00000001133bf020: stp w20, w22, [sp,  #8]
+0x00000001133bf024: bl 0x0000000112d8af00  ; ImmutableOopMap {[0]=Oop }
                                            ;*iload {reexecute=0 rethrow=0 return_oop=0}
-                                           ; - FunctionDispatchingFunctionalStyle::compute@10 (line 12)
+                                           ; - FunctionDispatchingFunctionalStyle::compute@10 (line 10)
                                            ;   {runtime_call UncommonTrapBlob}
-0x00000001159144a8: nop  ;   {post_call_nop}
-0x00000001159144ac: movk xzr  #0x3e0
-0x00000001159144b0: movk xzr  #0x200                 ;*iload {reexecute=0 rethrow=0 return_oop=0}
-                              ; - FunctionDispatchingFunctionalStyle::compute@10 (line 12)
-0x00000001159144b4: str w22, [sp,  #24]
-0x00000001159144b8: b 0x0000000115914420
-0x00000001159144bc: str w22, [sp,  #4]
-0x00000001159144c0: b 0x00000001159144c8
-0x00000001159144c4: str w22, [sp,  #4]               ;*if_icmpge {reexecute=0 rethrow=0 return_oop=0}
-                                   ; - FunctionDispatchingFunctionalStyle::compute@13 (line 12)
-0x00000001159144c8: mov w1  #0xffffff45            	// #-187
-0x00000001159144cc: mov w29, w19
-0x00000001159144d0: str w20, [sp]
-0x00000001159144d4: bl 0x00000001152def00  ; ImmutableOopMap {}
+0x00000001133bf028: nop  ;   {post_call_nop}
+0x00000001133bf02c: movk xzr  #0x3e0
+0x00000001133bf030: movk xzr  #0x200                 ;*iload {reexecute=0 rethrow=0 return_oop=0}
+                              ; - FunctionDispatchingFunctionalStyle::compute@10 (line 10)
+0x00000001133bf034: str w22, [sp,  #24]
+0x00000001133bf038: b 0x00000001133befa0
+0x00000001133bf03c: str w22, [sp,  #4]
+0x00000001133bf040: b 0x00000001133bf048
+0x00000001133bf044: str w22, [sp,  #4]               ;*if_icmpge {reexecute=0 rethrow=0 return_oop=0}
+                                   ; - FunctionDispatchingFunctionalStyle::compute@13 (line 10)
+0x00000001133bf048: mov w1  #0xffffff45            	// #-187
+0x00000001133bf04c: mov w29, w19
+0x00000001133bf050: str w20, [sp]
+0x00000001133bf054: bl 0x0000000112d8af00  ; ImmutableOopMap {}
                                            ;*if_icmpge {reexecute=1 rethrow=0 return_oop=0}
-                                           ; - (reexecute) FunctionDispatchingFunctionalStyle::compute@13 (line 12)
+                                           ; - (reexecute) FunctionDispatchingFunctionalStyle::compute@13 (line 10)
                                            ;   {runtime_call UncommonTrapBlob}
-0x00000001159144d8: nop  ;   {post_call_nop}
-0x00000001159144dc: movk xzr  #0x410
-0x00000001159144e0: movk xzr  #0x300                 ;*if_icmpge {reexecute=0 rethrow=0 return_oop=0}
-                              ; - FunctionDispatchingFunctionalStyle::compute@13 (line 12)
-0x00000001159144e4: str w22, [sp,  #16]
-0x00000001159144e8: b 0x0000000115914504
-0x00000001159144ec: mov x11, x10
-0x00000001159144f0: mov w3, w20
-0x00000001159144f4: b 0x00000001159144fc
-0x00000001159144f8: mov w3, w20
-0x00000001159144fc: mov w20, w3
-0x0000000115914500: str w22, [sp,  #16]
-0x0000000115914504: mov w1  #0xffffffde            	// #-34
-0x0000000115914508: mov x29, x21
-0x000000011591450c: stp w20, w19, [sp]
-0x0000000115914510: str x11, [sp,  #8]
-0x0000000115914514: bl 0x00000001152def00  ; ImmutableOopMap {rfp=Oop [8]=Oop }
+0x00000001133bf058: nop  ;   {post_call_nop}
+0x00000001133bf05c: movk xzr  #0x410
+0x00000001133bf060: movk xzr  #0x300                 ;*if_icmpge {reexecute=0 rethrow=0 return_oop=0}
+                              ; - FunctionDispatchingFunctionalStyle::compute@13 (line 10)
+0x00000001133bf064: str w22, [sp,  #24]
+0x00000001133bf068: b 0x00000001133bf084
+0x00000001133bf06c: mov x11, x10
+0x00000001133bf070: mov w3, w20
+0x00000001133bf074: b 0x00000001133bf07c
+0x00000001133bf078: mov w3, w20
+0x00000001133bf07c: mov w20, w3
+0x00000001133bf080: str w22, [sp,  #24]
+0x00000001133bf084: mov w1  #0xffffffde            	// #-34
+0x00000001133bf088: mov x29, x21
+0x00000001133bf08c: stp w20, w19, [sp]
+0x00000001133bf090: str x11, [sp,  #16]
+0x00000001133bf094: bl 0x0000000112d8af00  ; ImmutableOopMap {rfp=Oop [16]=Oop }
                                            ;*instanceof {reexecute=0 rethrow=0 return_oop=0}
-                                           ; - FunctionDispatchingFunctionalStyle$$TypeSwitch/0x0000700001041800::typeSwitch@59
+                                           ; - FunctionDispatchingFunctionalStyle$$TypeSwitch/0x0000038001041000::typeSwitch@67
                                            ; - java.lang.invoke.DirectMethodHandle$Holder::invokeStatic@11
                                            ; - java.lang.invoke.Invokers$Holder::linkToTargetMethod@6
-                                           ; - FunctionDispatchingFunctionalStyle::getPrice@11 (line 19)
-                                           ; - FunctionDispatchingFunctionalStyle::compute@25 (line 13)
+                                           ; - FunctionDispatchingFunctionalStyle::getPrice@11 (line 17)
+                                           ; - FunctionDispatchingFunctionalStyle::compute@25 (line 11)
                                            ;   {runtime_call UncommonTrapBlob}
-0x0000000115914518: nop  ;   {post_call_nop}
-0x000000011591451c: movk xzr  #0x450
-0x0000000115914520: movk xzr  #0x400
-0x0000000115914524: mov w1  #0xffffff6e            	// #-146
-0x0000000115914528: mov w29, w19
-0x000000011591452c: stp w20, w22, [sp]
-0x0000000115914530: bl 0x00000001152def00  ; ImmutableOopMap {}
+0x00000001133bf098: nop  ;   {post_call_nop}
+0x00000001133bf09c: movk xzr  #0x450
+0x00000001133bf0a0: movk xzr  #0x400
+0x00000001133bf0a4: mov w1  #0xffffff6e            	// #-146
+0x00000001133bf0a8: mov w29, w19
+0x00000001133bf0ac: stp w20, w22, [sp]
+0x00000001133bf0b0: bl 0x0000000112d8af00  ; ImmutableOopMap {}
                                            ;*iload {reexecute=0 rethrow=0 return_oop=0}
-                                           ; - FunctionDispatchingFunctionalStyle::compute@10 (line 12)
+                                           ; - FunctionDispatchingFunctionalStyle::compute@10 (line 10)
                                            ;   {runtime_call UncommonTrapBlob}
-0x0000000115914534: nop  ;   {post_call_nop}
-0x0000000115914538: movk xzr  #0x46c
-0x000000011591453c: movk xzr  #0x500                 ;*iload {reexecute=0 rethrow=0 return_oop=0}
-                              ; - FunctionDispatchingFunctionalStyle::compute@10 (line 12)
-0x0000000115914540: mov w3, w20
-0x0000000115914544: str w22, [sp,  #16]
-0x0000000115914548: b 0x0000000115914560
-0x000000011591454c: mov w3, w20
-0x0000000115914550: b 0x000000011591455c
-0x0000000115914554: mov w5, w11
-0x0000000115914558: mov w3, w20
-0x000000011591455c: str w22, [sp,  #16]              ;*synchronization entry
+0x00000001133bf0b4: nop  ;   {post_call_nop}
+0x00000001133bf0b8: movk xzr  #0x46c
+0x00000001133bf0bc: movk xzr  #0x500                 ;*iload {reexecute=0 rethrow=0 return_oop=0}
+                              ; - FunctionDispatchingFunctionalStyle::compute@10 (line 10)
+0x00000001133bf0c0: mov w3, w20
+0x00000001133bf0c4: str w22, [sp,  #16]
+0x00000001133bf0c8: b 0x00000001133bf0e0
+0x00000001133bf0cc: mov w3, w20
+0x00000001133bf0d0: b 0x00000001133bf0dc
+0x00000001133bf0d4: mov w5, w11
+0x00000001133bf0d8: mov w3, w20
+0x00000001133bf0dc: str w22, [sp,  #16]              ;*synchronization entry
                                    ; - java.util.Objects::requireNonNull@-1 (line 219)
-                                   ; - FunctionDispatchingFunctionalStyle::getPrice@2 (line 19)
-                                   ; - FunctionDispatchingFunctionalStyle::compute@25 (line 13)
-0x0000000115914560: lsl x29, x5  #3
-0x0000000115914564: mov w1  #0xffffff45            	// #-187
-0x0000000115914568: str x21, [sp]
-0x000000011591456c: stp w3, w19, [sp,  #8]
-0x0000000115914570: bl 0x00000001152def00  ; ImmutableOopMap {rfp=Oop [0]=Oop }
+                                   ; - FunctionDispatchingFunctionalStyle::getPrice@2 (line 17)
+                                   ; - FunctionDispatchingFunctionalStyle::compute@25 (line 11)
+0x00000001133bf0e0: lsl x29, x5  #3
+0x00000001133bf0e4: mov w1  #0xffffff45            	// #-187
+0x00000001133bf0e8: str x21, [sp]
+0x00000001133bf0ec: stp w3, w19, [sp,  #8]
+0x00000001133bf0f0: bl 0x0000000112d8af00  ; ImmutableOopMap {rfp=Oop [0]=Oop }
                                            ;*ifnonnull {reexecute=1 rethrow=0 return_oop=0}
                                            ; - (reexecute) java.util.Objects::requireNonNull@1 (line 219)
-                                           ; - FunctionDispatchingFunctionalStyle::getPrice@2 (line 19)
-                                           ; - FunctionDispatchingFunctionalStyle::compute@25 (line 13)
+                                           ; - FunctionDispatchingFunctionalStyle::getPrice@2 (line 17)
+                                           ; - FunctionDispatchingFunctionalStyle::compute@25 (line 11)
                                            ;   {runtime_call UncommonTrapBlob}
-0x0000000115914574: nop  ;   {post_call_nop}
-0x0000000115914578: movk xzr  #0x4ac
-0x000000011591457c: movk xzr  #0x600                 ;*ifnonnull {reexecute=0 rethrow=0 return_oop=0}
+0x00000001133bf0f4: nop  ;   {post_call_nop}
+0x00000001133bf0f8: movk xzr  #0x4ac
+0x00000001133bf0fc: movk xzr  #0x600                 ;*ifnonnull {reexecute=0 rethrow=0 return_oop=0}
                               ; - java.util.Objects::requireNonNull@1 (line 219)
-                              ; - FunctionDispatchingFunctionalStyle::getPrice@2 (line 19)
-                              ; - FunctionDispatchingFunctionalStyle::compute@25 (line 13)
-0x0000000115914580: mov x8  #0x180                 	// #384
+                              ; - FunctionDispatchingFunctionalStyle::getPrice@2 (line 17)
+                              ; - FunctionDispatchingFunctionalStyle::compute@25 (line 11)
+0x00000001133bf100: mov x8  #0xc180                	// #49536
                             ;   {runtime_call Stub::method_entry_barrier}
-0x0000000115914584: movk x8  #0x1521, lsl #16
-0x0000000115914588: movk x8  #0x1, lsl #32
-0x000000011591458c: blr x8
-0x0000000115914590: b 0x00000001159141f4
-0x0000000115914594: udf  #0                          ;   {entry_guard}
+0x00000001133bf104: movk x8  #0x12cb, lsl #16
+0x00000001133bf108: movk x8  #0x1, lsl #32
+0x00000001133bf10c: blr x8
+0x00000001133bf110: b 0x00000001133bed74
+0x00000001133bf114: udf  #0                          ;   {entry_guard}
 [Exception Handler]
-0x0000000115914598: b 0x00000001152df080  ;   {runtime_call ExceptionBlob}
+0x00000001133bf118: b 0x0000000112d8b080  ;   {runtime_call ExceptionBlob}
 [Deopt Handler Code]
-0x000000011591459c: adr x30, 0x000000011591459c
-0x00000001159145a0: b 0x0000000115208e80  ;   {runtime_call DeoptimizationBlob}
-0x00000001159145a4: udf  #0
+0x00000001133bf11c: adr x30, 0x00000001133bf11c
+0x00000001133bf120: b 0x0000000112cb4e80  ;   {runtime_call DeoptimizationBlob}
+0x00000001133bf124: udf  #0

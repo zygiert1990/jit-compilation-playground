@@ -1,144 +1,145 @@
-# {method} {0x0000000130400898} 'compute' '([Lorg/zygiert/FunctionDispatching$Vehicle;)I' in 'org/zygiert/FunctionDispatching'
+# {method} {0x0000000133400658} 'compute' '([LFunctionDispatching$Vehicle;)I' in 'FunctionDispatching'
 [Entry Point]
-0x00000001136aa6c0: brk  #0x0
-0x00000001136aa6c4: nop
-0x00000001136aa6c8: nop
-0x00000001136aa6cc: nop
-0x00000001136aa6d0: nop
-0x00000001136aa6d4: sub x9, sp  #0x14, lsl #12
-0x00000001136aa6d8: str xzr, [x9]
-0x00000001136aa6dc: sub sp, sp  #0x40
-0x00000001136aa6e0: stp x29, x30, [sp,  #48]
-0x00000001136aa6e4: ldr w8, 0x00000001136aa850
-0x00000001136aa6e8: ldr w9, [x28,  #32]
-0x00000001136aa6ec: cmp x8, x9
-0x00000001136aa6f0: b
-0x00000001136aa6f4: ldr x19, [x1,  #24]
-0x00000001136aa6f8: ldr w21, [x1,  #32]
-0x00000001136aa6fc: ldr w20, [x1,  #16]
-0x00000001136aa700: ldr w29, [x1,  #8]
-0x00000001136aa704: mov x0, x1
-0x00000001136aa708: adr x9, 0x00000001136aa720
-0x00000001136aa70c: str x9, [x28,  #1040]
-0x00000001136aa710: mov x8  #0x2384                	// #9092
+0x0000000115acae80: brk  #0x0
+0x0000000115acae84: nop
+0x0000000115acae88: nop
+0x0000000115acae8c: nop
+0x0000000115acae90: nop
+0x0000000115acae94: sub x9, sp  #0x14, lsl #12
+0x0000000115acae98: str xzr, [x9]
+0x0000000115acae9c: sub sp, sp  #0x40
+0x0000000115acaea0: stp x29, x30, [sp,  #48]
+0x0000000115acaea4: ldr w8, 0x0000000115acb010
+0x0000000115acaea8: ldr w9, [x28,  #32]
+0x0000000115acaeac: cmp x8, x9
+0x0000000115acaeb0: b
+0x0000000115acaeb4: ldr x19, [x1,  #24]
+0x0000000115acaeb8: ldr w21, [x1,  #32]
+0x0000000115acaebc: ldr w20, [x1,  #16]
+0x0000000115acaec0: ldr w29, [x1,  #8]
+0x0000000115acaec4: mov x0, x1
+0x0000000115acaec8: adr x9, 0x0000000115acaee0
+0x0000000115acaecc: str x9, [x28,  #1040]
+0x0000000115acaed0: mov x8  #0x6384                	// #25476
                             ;   {runtime_call SharedRuntime::OSR_migration_end(long*)}
-0x00000001136aa714: movk x8  #0x279, lsl #16
-0x00000001136aa718: movk x8  #0x1, lsl #32
-0x00000001136aa71c: blr x8
-0x00000001136aa720: nop  ;   {post_call_nop}
-0x00000001136aa724: movk xzr  #0x0
-0x00000001136aa728: movk xzr  #0x0
-0x00000001136aa72c: ldr w11, [x19,  #8]              ; implicit exception: dispatches to 0x00000001136aa824
-0x00000001136aa730: eor x10, x11  #0x20000000000
-0x00000001136aa734: ldr x10, [x10,  #56]
-0x00000001136aa738: mov x11  #0x5a70                	// #23152
+0x0000000115acaed4: movk x8  #0x4bb, lsl #16
+0x0000000115acaed8: movk x8  #0x1, lsl #32
+0x0000000115acaedc: blr x8
+0x0000000115acaee0: nop  ;   {post_call_nop}
+0x0000000115acaee4: movk xzr  #0x0
+0x0000000115acaee8: movk xzr  #0x0
+0x0000000115acaeec: ldr w11, [x19,  #8]              ; implicit exception: dispatches to 0x0000000115acafe4
+0x0000000115acaef0: eor x10, x11  #0xfff00000000
+0x0000000115acaef4: ldr x10, [x10,  #56]
+0x0000000115acaef8: mov x11  #0x5a70                	// #23152
                              ;   {metadata('java/lang/Object'[])}
-0x00000001136aa73c: movk x11  #0x17, lsl #16
-0x00000001136aa740: movk x11  #0x200, lsl #32
-0x00000001136aa744: cmp x10, x11
-0x00000001136aa748: b  ; - org.zygiert.FunctionDispatching::compute@10 (line 14)
-0x00000001136aa74c: ldr w12, [x19,  #12]             ;*goto {reexecute=0 rethrow=0 return_oop=0}
-                                    ; - org.zygiert.FunctionDispatching::compute@35 (line 14)
-0x00000001136aa750: b 0x00000001136aa7b0
-0x00000001136aa754: nop
-0x00000001136aa758: nop
-0x00000001136aa75c: nop  ;*iload {reexecute=0 rethrow=0 return_oop=0}
-                         ; - org.zygiert.FunctionDispatching::compute@10 (line 14)
-0x00000001136aa760: ldr w11, [x10,  #16]
-0x00000001136aa764: str x19, [sp]
-0x00000001136aa768: stp w20, w21, [sp,  #8]
-0x00000001136aa76c: str w12, [sp,  #16]
-0x00000001136aa770: lsl x1, x11  #3
-0x00000001136aa774: mov x9  #0x1b0                 	// #432
-0x00000001136aa778: movk x9  #0x33, lsl #16
-0x00000001136aa77c: movk x9  #0x6000, lsl #32
-0x00000001136aa780: bl 0x0000000112f9f800  ; ImmutableOopMap {[0]=Oop }
+0x0000000115acaefc: movk x11  #0x17, lsl #16
+0x0000000115acaf00: movk x11  #0xfff, lsl #32
+0x0000000115acaf04: cmp x10, x11
+0x0000000115acaf08: b  ; - FunctionDispatching::compute@10 (line 10)
+0x0000000115acaf0c: ldr w12, [x19,  #12]             ;*goto {reexecute=0 rethrow=0 return_oop=0}
+                                    ; - FunctionDispatching::compute@35 (line 10)
+0x0000000115acaf10: b 0x0000000115acaf70
+0x0000000115acaf14: nop
+0x0000000115acaf18: nop
+0x0000000115acaf1c: nop  ;*iload {reexecute=0 rethrow=0 return_oop=0}
+                         ; - FunctionDispatching::compute@10 (line 10)
+0x0000000115acaf20: ldr w11, [x10,  #16]
+0x0000000115acaf24: str x19, [sp]
+0x0000000115acaf28: stp w20, w21, [sp,  #8]
+0x0000000115acaf2c: str w12, [sp,  #16]
+0x0000000115acaf30: lsl x1, x11  #3
+0x0000000115acaf34: mov x9  #0x2e80                	// #11904
+0x0000000115acaf38: movk x9  #0x17f, lsl #16
+0x0000000115acaf3c: movk x9  #0x6000, lsl #32
+0x0000000115acaf40: bl 0x00000001153c3800  ; ImmutableOopMap {[0]=Oop }
                                            ;*invokeinterface getPrice {reexecute=0 rethrow=0 return_oop=0}
-                                           ; - org.zygiert.FunctionDispatching::compute@25 (line 15)
+                                           ; - FunctionDispatching::compute@25 (line 11)
                                            ;   {virtual_call}
-0x00000001136aa784: nop  ;   {post_call_nop}
-0x00000001136aa788: movk xzr  #0x1bc
-0x00000001136aa78c: movk xzr  #0x0                   ;*invokeinterface getPrice {reexecute=0 rethrow=0 return_oop=0}
-                              ; - org.zygiert.FunctionDispatching::compute@25 (line 15)
-0x00000001136aa790: ldr x10, [x28,  #48]
-0x00000001136aa794: add w29, w29  #0x1              ;*iinc {reexecute=0 rethrow=0 return_oop=0}
-                                  ; - org.zygiert.FunctionDispatching::compute@32 (line 14)
-0x00000001136aa798: ldr w11, [sp,  #12]
-0x00000001136aa79c: add w21, w11, w0  ; ImmutableOopMap {[0]=Oop }
+0x0000000115acaf44: nop  ;   {post_call_nop}
+0x0000000115acaf48: movk xzr  #0x1bc
+0x0000000115acaf4c: movk xzr  #0x0                   ;*invokeinterface getPrice {reexecute=0 rethrow=0 return_oop=0}
+                              ; - FunctionDispatching::compute@25 (line 11)
+0x0000000115acaf50: ldr x10, [x28,  #48]
+0x0000000115acaf54: add w29, w29  #0x1              ;*iinc {reexecute=0 rethrow=0 return_oop=0}
+                                  ; - FunctionDispatching::compute@32 (line 10)
+0x0000000115acaf58: ldr w11, [sp,  #12]
+0x0000000115acaf5c: add w21, w11, w0  ; ImmutableOopMap {[0]=Oop }
                                       ;*goto {reexecute=1 rethrow=0 return_oop=0}
-                                      ; - (reexecute) org.zygiert.FunctionDispatching::compute@35 (line 14)
-0x00000001136aa7a0: ldr wzr, [x10]  ;*goto {reexecute=0 rethrow=0 return_oop=0}
-                                    ; - org.zygiert.FunctionDispatching::compute@35 (line 14)
+                                      ; - (reexecute) FunctionDispatching::compute@35 (line 10)
+0x0000000115acaf60: ldr wzr, [x10]  ;*goto {reexecute=0 rethrow=0 return_oop=0}
+                                    ; - FunctionDispatching::compute@35 (line 10)
                                     ;   {poll} *** SAFEPOINT POLL ***
-0x00000001136aa7a4: ldr x19, [sp]
-0x00000001136aa7a8: ldr w20, [sp,  #8]
-0x00000001136aa7ac: ldr w12, [sp,  #16]              ;*iload {reexecute=0 rethrow=0 return_oop=0}
-                                   ; - org.zygiert.FunctionDispatching::compute@10 (line 14)
-0x00000001136aa7b0: add x10, x19, w29, sxtw  #2
-0x00000001136aa7b4: cmp w29, w20
-0x00000001136aa7b8: b  ; - org.zygiert.FunctionDispatching::compute@13 (line 14)
-0x00000001136aa7bc: cmp w29, w12
-0x00000001136aa7c0: b
-0x00000001136aa7c4: mov w1  #0xffffffe4            	// #-28
-0x00000001136aa7c8: stp w21, w20, [sp]
-0x00000001136aa7cc: str x19, [sp,  #16]
-0x00000001136aa7d0: bl 0x0000000113076f00  ; ImmutableOopMap {[16]=Oop }
+0x0000000115acaf64: ldr x19, [sp]
+0x0000000115acaf68: ldr w20, [sp,  #8]
+0x0000000115acaf6c: ldr w12, [sp,  #16]              ;*iload {reexecute=0 rethrow=0 return_oop=0}
+                                   ; - FunctionDispatching::compute@10 (line 10)
+0x0000000115acaf70: add x10, x19, w29, sxtw  #2
+0x0000000115acaf74: cmp w29, w20
+0x0000000115acaf78: b  ; - FunctionDispatching::compute@13 (line 10)
+0x0000000115acaf7c: cmp w29, w12
+0x0000000115acaf80: b
+0x0000000115acaf84: mov w1  #0xffffffe4            	// #-28
+0x0000000115acaf88: stp w21, w20, [sp]
+0x0000000115acaf8c: str x19, [sp,  #16]
+0x0000000115acaf90: bl 0x000000011549af00  ; ImmutableOopMap {[16]=Oop }
                                            ;*aaload {reexecute=0 rethrow=0 return_oop=0}
-                                           ; - org.zygiert.FunctionDispatching::compute@19 (line 14)
+                                           ; - FunctionDispatching::compute@19 (line 10)
                                            ;   {runtime_call UncommonTrapBlob}
-0x00000001136aa7d4: nop  ;   {post_call_nop}
-0x00000001136aa7d8: movk xzr  #0x20c
-0x00000001136aa7dc: movk xzr  #0x200                 ;*if_icmpge {reexecute=0 rethrow=0 return_oop=0}
-                              ; - org.zygiert.FunctionDispatching::compute@13 (line 14)
-0x00000001136aa7e0: mov w1  #0xffffff45            	// #-187
-0x00000001136aa7e4: stp w21, w20, [sp]
-0x00000001136aa7e8: bl 0x0000000113076f00  ; ImmutableOopMap {}
+0x0000000115acaf94: nop  ;   {post_call_nop}
+0x0000000115acaf98: movk xzr  #0x20c
+0x0000000115acaf9c: movk xzr  #0x200                 ;*if_icmpge {reexecute=0 rethrow=0 return_oop=0}
+                              ; - FunctionDispatching::compute@13 (line 10)
+0x0000000115acafa0: mov w1  #0xffffff45            	// #-187
+0x0000000115acafa4: stp w21, w20, [sp]
+0x0000000115acafa8: bl 0x000000011549af00  ; ImmutableOopMap {}
                                            ;*if_icmpge {reexecute=1 rethrow=0 return_oop=0}
-                                           ; - (reexecute) org.zygiert.FunctionDispatching::compute@13 (line 14)
+                                           ; - (reexecute) FunctionDispatching::compute@13 (line 10)
                                            ;   {runtime_call UncommonTrapBlob}
-0x00000001136aa7ec: nop  ;   {post_call_nop}
-0x00000001136aa7f0: movk xzr  #0x224
-0x00000001136aa7f4: movk xzr  #0x300
-0x00000001136aa7f8: mov w1  #0xffffff85            	// #-123
-0x00000001136aa7fc: stp w21, w20, [sp]
-0x00000001136aa800: str x19, [sp,  #8]
-0x00000001136aa804: bl 0x0000000113076f00  ; ImmutableOopMap {[8]=Oop }
+0x0000000115acafac: nop  ;   {post_call_nop}
+0x0000000115acafb0: movk xzr  #0x224
+0x0000000115acafb4: movk xzr  #0x300
+0x0000000115acafb8: mov w1  #0xffffff85            	// #-123
+0x0000000115acafbc: stp w21, w20, [sp]
+0x0000000115acafc0: str x19, [sp,  #8]
+0x0000000115acafc4: bl 0x000000011549af00  ; ImmutableOopMap {[8]=Oop }
                                            ;*iload {reexecute=0 rethrow=0 return_oop=0}
-                                           ; - org.zygiert.FunctionDispatching::compute@10 (line 14)
+                                           ; - FunctionDispatching::compute@10 (line 10)
                                            ;   {runtime_call UncommonTrapBlob}
-0x00000001136aa808: nop  ;   {post_call_nop}
-0x00000001136aa80c: movk xzr  #0x240
-0x00000001136aa810: movk xzr  #0x400                 ;*invokeinterface getPrice {reexecute=0 rethrow=0 return_oop=0}
-                              ; - org.zygiert.FunctionDispatching::compute@25 (line 15)
-0x00000001136aa814: mov x1, x0
-0x00000001136aa818: ldp x29, x30, [sp,  #48]
-0x00000001136aa81c: add sp, sp  #0x40
-0x00000001136aa820: b 0x000000011307b5c0  ;   {runtime_call C2 Runtime rethrow}
-0x00000001136aa824: mov w1  #0xffffff6e            	// #-146
-0x00000001136aa828: stp w21, w20, [sp]
-0x00000001136aa82c: bl 0x0000000113076f00  ; ImmutableOopMap {}
+0x0000000115acafc8: nop  ;   {post_call_nop}
+0x0000000115acafcc: movk xzr  #0x240
+0x0000000115acafd0: movk xzr  #0x400                 ;*invokeinterface getPrice {reexecute=0 rethrow=0 return_oop=0}
+                              ; - FunctionDispatching::compute@25 (line 11)
+0x0000000115acafd4: mov x1, x0
+0x0000000115acafd8: ldp x29, x30, [sp,  #48]
+0x0000000115acafdc: add sp, sp  #0x40
+0x0000000115acafe0: b 0x000000011549f5c0  ;   {runtime_call C2 Runtime rethrow}
+0x0000000115acafe4: mov w1  #0xffffff6e            	// #-146
+0x0000000115acafe8: stp w21, w20, [sp]
+0x0000000115acafec: bl 0x000000011549af00  ; ImmutableOopMap {}
                                            ;*iload {reexecute=0 rethrow=0 return_oop=0}
-                                           ; - org.zygiert.FunctionDispatching::compute@10 (line 14)
+                                           ; - FunctionDispatching::compute@10 (line 10)
                                            ;   {runtime_call UncommonTrapBlob}
-0x00000001136aa830: nop  ;   {post_call_nop}
-0x00000001136aa834: movk xzr  #0x268
-0x00000001136aa838: movk xzr  #0x500                 ;*iload {reexecute=0 rethrow=0 return_oop=0}
-                              ; - org.zygiert.FunctionDispatching::compute@10 (line 14)
-0x00000001136aa83c: mov x8  #0x8180                	// #33152
+0x0000000115acaff0: nop  ;   {post_call_nop}
+0x0000000115acaff4: movk xzr  #0x268
+0x0000000115acaff8: movk xzr  #0x500                 ;*iload {reexecute=0 rethrow=0 return_oop=0}
+                              ; - FunctionDispatching::compute@10 (line 10)
+0x0000000115acaffc: mov x8  #0xc180                	// #49536
                             ;   {runtime_call Stub::method_entry_barrier}
-0x00000001136aa840: movk x8  #0x12fa, lsl #16
-0x00000001136aa844: movk x8  #0x1, lsl #32
-0x00000001136aa848: blr x8
-0x00000001136aa84c: b 0x00000001136aa6f4
-0x00000001136aa850: udf  #0                          ;   {entry_guard}
-0x00000001136aa854: udf  #0
+0x0000000115acb000: movk x8  #0x153c, lsl #16
+0x0000000115acb004: movk x8  #0x1, lsl #32
+0x0000000115acb008: blr x8
+0x0000000115acb00c: b 0x0000000115acaeb4
+0x0000000115acb010: udf  #0                          ;   {entry_guard}
+0x0000000115acb014: udf  #0
 [Stub Code]
-0x00000001136aa858: ldr x8, 0x00000001136aa860  ;   {trampoline_stub}
-0x00000001136aa85c: br x80x00000001136aa860:
-0x00000001136aa864: udf  #1
+0x0000000115acb018: ldr x8, 0x0000000115acb020  ;   {trampoline_stub}
+0x0000000115acb01c: br x8
+0x0000000115acb020: b 0x000000011a9d9020
+0x0000000115acb024: udf  #1
 [Exception Handler]
-0x00000001136aa868: b 0x0000000113077080  ;   {runtime_call ExceptionBlob}
+0x0000000115acb028: b 0x000000011549b080  ;   {runtime_call ExceptionBlob}
 [Deopt Handler Code]
-0x00000001136aa86c: adr x30, 0x00000001136aa86c
-0x00000001136aa870: b 0x0000000112fa0e80  ;   {runtime_call DeoptimizationBlob}
-0x00000001136aa874: udf  #0
+0x0000000115acb02c: adr x30, 0x0000000115acb02c
+0x0000000115acb030: b 0x00000001153c4e80  ;   {runtime_call DeoptimizationBlob}
+0x0000000115acb034: udf  #0
